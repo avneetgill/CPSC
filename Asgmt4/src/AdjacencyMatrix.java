@@ -1,6 +1,7 @@
-package app;
+//package app;
 
 import java.util.ArrayList;
+import java.io.PrintWriter;
 
 public class AdjacencyMatrix {
     int[][] theMatrix;
@@ -10,9 +11,10 @@ public class AdjacencyMatrix {
     public AdjacencyMatrix(int size){
         this.size = size;
         theMatrix = new int[size][size];
+        vertices = new ArrayList<Matrix>();
     }
 
-    public void addVertex(int[][]mat){
+    public void addVertex(int[][]mat){ 
         Matrix matrix = new Matrix(mat);
         vertices.add(matrix);
     }
@@ -26,5 +28,5 @@ public class AdjacencyMatrix {
             }
         } 
     }
-    
+
 }
